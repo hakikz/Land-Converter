@@ -1,0 +1,18 @@
+.header{
+
+    &.trasnparent{
+        background-color: var(--HomeNavBG);
+
+        &.landing{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+    }
+    background-color: var( --NavBG );
+    height: 90px;
+    
+}

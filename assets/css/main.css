@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --HomeNavBG: rgba(89, 93, 98, 0.23);
+  --white: #ffffff;
+  --menuHover: #94979A;
+  --NavBG: #595D62;
+  --heroAshBG: #464B50;
+  --arrowColor: #E8E8E8;
+  --greenBG: #80B35A;
+  --orangeBG: #F27634;
+  --buyPlotAsh: #eeeeee;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-color: var(--NavBG);
+  height: 90px;
+}
+.header.trasnparent {
+  background-color: var(--HomeNavBG);
+}
+.header.trasnparent.landing {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.navbar {
+  padding: 0;
+  height: 100%;
+}
+.navbar .navbar-brand {
+  padding: 0;
+}
+.navbar .navbar-brand img {
+  max-width: 280px;
+}
+.navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar .navbar-nav li {
+  padding: 0 !important;
+}
+.navbar .navbar-nav li a {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+  padding: 32px 15px;
+}
+.navbar .navbar-nav li a:hover {
+  background-color: var(--menuHover);
+}
+
+:root {
+  --HomeNavBG: rgba(89, 93, 98, 0.23);
+  --white: #ffffff;
+  --menuHover: #94979A;
+  --NavBG: #595D62;
+  --heroAshBG: #464B50;
+  --arrowColor: #E8E8E8;
+  --greenBG: #80B35A;
+  --orangeBG: #F27634;
+  --buyPlotAsh: #eeeeee;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero.landing {
+  background-color: var(--heroAshBG);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hero.landing .top-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero.landing .top-corner img {
+  max-width: 600px;
+  width: 100%;
+}
+.hero.landing .bottom-corner {
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+}
+.hero.landing .bottom-corner img {
+  max-width: 400px;
+  width: 100%;
+}
+.hero .hero-wrap {
+  position: relative;
+  padding: 200px 0;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero .hero-wrap h1 {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--white);
+  padding-bottom: 15px;
+}
+.hero .hero-wrap p {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+}
+.hero .scroll-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -100px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  color: var(--white);
+}
+.hero .scroll-down a i {
+  color: var(--arrowColor);
+  font-size: 55px;
+}
+
+.enter {
+  background-color: var(--greenBG);
+  padding: 80px 0;
+}
+.enter .text-block {
+  text-align: center;
+  width: 100%;
+  padding: 30px 60px;
+}
+.enter .text-block h2 {
+  font-size: 35px;
+}
+.enter .text-block p {
+  font-size: 20px;
+  padding: 50px 0;
+  margin-bottom: 0;
+}
+.enter .text-block a {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+.enter .text-block a:hover {
+  text-decoration: underline;
+}
+.enter .text-block.sell-land {
+  background-color: var(--orangeBG);
+}
+.enter .text-block.sell-land h2, .enter .text-block.sell-land p, .enter .text-block.sell-land a {
+  color: var(--white);
+}
+.enter .text-block.buy-plot {
+  background-color: var(--buyPlotAsh);
+}
+.enter .text-block.buy-plot h2, .enter .text-block.buy-plot p, .enter .text-block.buy-plot a {
+  color: var(--herAshBG);
+}
+
+.footer {
+  padding: 40px 0;
+}
+.footer .contact-part {
+  padding-bottom: 50px;
+}
+.footer .contact-part .contact-wrap h4 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+.footer .contact-part .contact-wrap ul {
+  padding-left: 0;
+  margin: 0;
+}
+.footer .contact-part .contact-wrap ul li {
+  list-style: none;
+  color: var(--heroAshBG);
+  line-height: 1.5em;
+}
+.footer .contact-part .contact-wrap ul li a {
+  color: var(--heroAshBG);
+  text-decoration: none;
+}
+.footer .contact-part .contact-wrap ul li a:hover {
+  text-decoration: underline;
+}
+.footer .contact-part .contact-menu {
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100px;
+}
+.footer .contact-part .contact-menu li {
+  list-style: none;
+}
+.footer .contact-part .contact-menu li a {
+  color: var(--orangeBG);
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding-bottom: 5px;
+}
+.footer .contact-part .contact-menu li a:hover {
+  text-decoration: underline;
+}
+.footer .privacy-part {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .privacy-part .privacy-menu {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.footer .privacy-part .privacy-menu li {
+  display: inline-block;
+}
+.footer .privacy-part .privacy-menu li:not(:last-child)::after {
+  content: "";
+  margin-left: 12px;
+  margin-right: 7px;
+  width: 1px;
+  height: 12px;
+  background-color: var(--heroAshBG);
+  display: inline-block;
+  position: relative;
+}
+.footer .privacy-part .privacy-menu li a {
+  color: var(--orangeBG);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer .privacy-part .privacy-menu li a:hover {
+  text-decoration: underline;
+}
+.footer .privacy-part .privacy-text {
+  font-weight: 700;
+  color: var(--heroAshBG);
+}
+.footer .privacy-part .privacy-text a {
+  text-decoration: none;
+  color: var(--orangeBG);
+}
+.footer .privacy-part .privacy-text a:hover {
+  text-decoration: underline;
+}
+.footer .privacy-part .register-no {
+  color: var(--menuHover);
+  padding: 30px 0;
+}
+.footer .privacy-part .copyright {
+  color: var(--menuHover);
+}
+
+/*# sourceMappingURL=main.css.map */

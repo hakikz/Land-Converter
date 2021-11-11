@@ -1,0 +1,72 @@
+.hero{
+    &.landing{
+        background-color: var( --heroAshBG );
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .top-corner{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            img{
+                max-width: 600px;
+                width: 100%;
+            }
+
+        }
+
+        .bottom-corner{
+            position: absolute;
+            bottom: -1%;
+            left: 0;
+
+            img{
+                max-width: 400px;
+                width: 100%;
+            }
+        }
+    }
+
+    .hero-wrap{
+        position: relative;
+        padding: 200px 0;
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1{
+            font-weight: $bold;
+            font-size: $fs + 30px;
+            color: var( --white );
+            padding-bottom: 15px;
+        }
+
+        p{
+            font-weight: $reg;
+            font-size: $fs + 5px;
+            color: var( --white );
+        }
+    }
+
+    .scroll-down{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        margin-left: -100px;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        color: var( --white );
+
+        a{
+            i{
+                color: var( --arrowColor );
+                font-size: $fs + 40px;
+            }
+        }
+    }
+}

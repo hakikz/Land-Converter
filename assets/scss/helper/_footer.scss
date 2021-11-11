@@ -1,0 +1,127 @@
+.footer{
+    padding: 40px 0;
+    .contact-part{
+        padding-bottom: 50px;
+
+        .contact-wrap{
+            h4{
+                font-weight: $bold;
+                font-size: $fs + 3px;
+                margin-bottom: 0;
+                line-height: 1.5em;
+            }
+            ul{
+                padding-left: 0;
+                margin: 0;
+
+                li{
+                    list-style: none;
+                    color: var( --heroAshBG );
+                    line-height: 1.5em;
+
+                    a{
+                        color: var( --heroAshBG );
+                        text-decoration: none;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .contact-menu{
+            padding-left: 0;
+            margin-bottom: 0;
+            width: 100%;
+            max-width: 100px;
+
+            li{
+                list-style: none;
+                a{
+                    color: var( --orangeBG );
+                    text-decoration: none;
+                    font-size: $fs + 3px;
+                    display: block;
+                    padding-bottom: 5px;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .privacy-part{
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .privacy-menu{
+            display: block;
+            padding-left: 0;
+            margin-bottom: 10px;
+
+            li{
+                display: inline-block;
+
+                &:not(:last-child){
+                    &::after{
+                        content: "";
+                        margin-left: 12px;
+                        margin-right: 7px;
+                        width: 1px;
+                        height: 12px;
+                        background-color: var(--heroAshBG);
+                        display: inline-block;
+                        position: relative;
+                    }
+                }
+
+                a{
+                    color: var(--orangeBG);
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .privacy-text{
+            font-weight: $bold;
+            color: var(--heroAshBG);
+
+            a{
+                text-decoration: none;
+                color: var(--orangeBG);
+
+                &:hover{
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
+        .register-no{
+            color: var(--menuHover);
+            padding: 30px 0;
+        }
+
+        .copyright{
+            color: var(--menuHover);
+        }
+
+    }
+    
+}
