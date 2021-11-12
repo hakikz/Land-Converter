@@ -1,0 +1,58 @@
+.about-us{
+
+    padding: 100px 0;
+
+    .about-wrap{
+        padding: 0 0 70px;
+        text-align: center;
+        h2{
+            color: var( --orangeBG );
+            font-weight: $bold;
+            font-size: $fs + 20px;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+        }
+
+        p{
+            margin: 0 auto;
+            max-width: 700px;
+            line-height: 1.8em;
+            width: 100%;
+        }
+    }
+
+    .director-wrap{
+        figure{
+            text-align: center;
+            img{
+                width: 100%;
+                max-width: 400px;
+            }
+
+            figcaption{
+                padding-top: 30px;
+                font-weight: $bold;
+                color: var( --black2 );
+            }
+
+            span{
+                color: var( --orangeBG );
+            }
+        }
+
+        p{
+            color: var( --black2 );
+            line-height: 1.8em;
+
+            a{
+                color: var( --orangeBG );
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+}

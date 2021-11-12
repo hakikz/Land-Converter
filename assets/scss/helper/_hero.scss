@@ -38,6 +38,19 @@
         &.green{
             background-color: var( --greenBG );
 
+            &.about{
+                .hero-wrap{
+                    text-align: left;
+                    margin: 0;
+                }
+
+                .top-corner{
+                    img{
+                        max-width: 750px ;
+                    }
+                }
+            }
+
             &.btn-yes{
                 p{
                     padding-bottom: 10px;
@@ -89,6 +102,39 @@
             font-weight: $reg;
             font-size: $fs + 5px;
             color: var( --white );
+        }
+
+        &.contact{
+            text-align: left;
+            h4{
+                color: var( --white );
+                font-weight: $bold;
+                font-size: $fs + 20px;
+            }
+
+            ul{
+                padding-left: 0;
+                margin-bottom: 0;
+                margin-top: 20px;
+
+                li{
+                    color: var( --white );
+                    list-style: none;
+                    font-weight: $light;
+                    line-height: 1.8em;
+                    a{
+                        color: var( --white );
+                        text-decoration: none;
+                        font-weight: $light;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+
+                    }
+                }
+
+            }
         }
     }
 

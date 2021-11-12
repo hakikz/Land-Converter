@@ -11,6 +11,21 @@
 
     }
 
+    // Hero
+
+    .hero{
+        &.inner{
+            &.orange{
+                .hero-wrap{
+                    &.contact{
+                        text-align: center;
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
     // Navbar
 
     .navbar {
@@ -29,6 +44,12 @@
                     text-align: center;
                     border-bottom: 1px solid var(--white);
                     padding: 18px 15px;
+                }
+
+                &:last-child{
+                    a{
+                        border-bottom: none;
+                    }
                 }
             }
         }
@@ -65,6 +86,14 @@
                     margin-bottom: 20px;
                 }
             }
+        }
+    }
+
+    // Contact
+    .contact-left-img{
+        img{
+            max-width: 200px;
+            padding-top: 50px;
         }
     }
 

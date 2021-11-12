@@ -17,6 +17,18 @@
             .top-corner{
                 top: -20%;
             }
+
+            &.green{
+                &.about{
+                    .top-corner{
+                        top: 0;
+                        img{
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -39,6 +51,12 @@
                     text-align: center;
                     border-bottom: 1px solid var(--white);
                     padding: 18px 15px;
+                }
+
+                &:last-child{
+                    a{
+                        border-bottom: none;
+                    }
                 }
             }
         }
