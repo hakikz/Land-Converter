@@ -27,6 +27,12 @@
                     background-color: var( --menuHover );
                 }
             }
+
+            &.current-menu-item{
+                a{
+                    background-color: var( --menuHover );
+                }
+            }
         }
     }
 }

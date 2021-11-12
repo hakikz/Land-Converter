@@ -1,0 +1,40 @@
+.how-it-works{
+    background-color: var( --heroAshBG );
+    padding: 100px 0;
+
+    &.buy{
+        background-color: var( --buyPlotAsh );
+
+        .how-it-works-wrap{
+            article{
+                color: var( --heroAshBG );
+            }
+        }
+    }
+
+    .how-it-works-wrap{
+        article{
+            color: var( --white );
+            margin-bottom: 45px;
+
+            h4{
+                font-weight: $bold;
+                font-size: $fs + 7px;
+                margin-bottom: 0;
+                padding-bottom: 30px;
+            }
+
+            p{
+                line-height: 1.8em;
+                a{
+                    color: var( --orangeBG );
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

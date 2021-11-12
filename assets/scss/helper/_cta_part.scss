@@ -1,0 +1,50 @@
+.cta-part{
+    background-color: var( --greenBG );
+    color: var( --white );
+    text-align: center;
+    padding: 50px 0;
+
+    h3{
+        font-weight: $bold;
+        font-size: $fs + 15px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    p{
+        font-size: $fs + 7px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    
+    span{
+        padding: 50px 0;
+        display: block;
+        font-size: $fs + 7px;
+
+        a{
+            text-decoration: none;
+            color: var( --white );
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    address{
+        line-height: 2em;
+
+        a{
+            font-weight: $bold;
+            text-decoration: none;
+            color: var( --white );
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+}

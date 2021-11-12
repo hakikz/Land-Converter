@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    // Header
+    .header{
+        height: auto;
+        padding: 20px 0;
+
+        &.transparent{
+            background-color: var( --heroAshBG );
+        }
+
+    }
+
+    // Hero
+
+    .hero{
+        &.landing{
+            .top-corner{
+                top: -20%;
+            }
+        }
+    }
+
+
+    // Navbar
+
+    .navbar {
+        .navbar-brand {
+            img {
+                max-width: 230px;
+            }
+        }
+
+        .navbar-nav {
+            margin-top: 20px;
+            li{
+                a{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    border-bottom: 1px solid var(--white);
+                    padding: 18px 15px;
+                }
+            }
+        }
+    }
+
+    // Enter
+
+    .enter {
+        .text-block{
+            &.sell-land {
+               margin-bottom: 30px;
+            }
+        }
+    }
+
+    // footer
+    .footer {
+        .contact-part {
+            text-align: center;
+            .contact-menu {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    // Query Card
+
+    .query-card{
+        .row{
+            .col-lg-4{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

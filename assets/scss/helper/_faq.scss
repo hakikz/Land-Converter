@@ -1,0 +1,41 @@
+.faq{
+    background-color: var( --heroAshBG );
+    padding: 100px 0;
+
+
+    &.buy{
+        background-color: var( --buyPlotAsh );
+
+        .faq-wrap{
+            article{
+                color: var( --heroAshBG );
+            }
+        }
+    }
+
+    .faq-wrap{
+        article{
+            color: var( --white );
+            margin-bottom: 45px;
+
+            h6{
+                font-weight: $bold;
+                font-size: $fs + 3px;
+                margin-bottom: 0;
+                padding-bottom: 30px;
+            }
+
+            p{
+                line-height: 1.8em;
+                a{
+                    color: var( --orangeBG );
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

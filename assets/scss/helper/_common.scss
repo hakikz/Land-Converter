@@ -1,6 +1,8 @@
 :root {
     --HomeNavBG: rgba(89, 93, 98, 0.23);
     --white: #ffffff;
+    --black: #050505;
+    --black2: #42474D;
     --menuHover: #94979A;
     --NavBG: #595D62;
     --heroAshBG: #464B50;
@@ -8,8 +10,74 @@
     --greenBG: #80B35A;
     --orangeBG: #F27634;
     --buyPlotAsh: #eeeeee;
+    --red: red;
+    --cardAsh: #A3A3A2;
 }
 
 body{
     font-family: $os;
+}
+
+.btn-hero{
+    background-color: var( --heroAshBG );
+    border-radius: 0;
+    color: var( --white );
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: $fs + 3px;
+    padding: 10px 40px;
+
+    &:focus{
+        box-shadow: 0 0 0 .25rem var( --HomeNavBG );
+    }
+
+}
+
+.btn-orange{
+    background-color: var( --orangeBG );
+    border-radius: 0;
+    color: var( --white );
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: $fs + 3px;
+    padding: 10px 40px;
+
+    &:focus{
+        box-shadow: 0 0 0 .25rem var( --HomeNavBG );
+    }
+
+}
+
+.btn-green{
+    background-color: var( --greenBG );
+    border-radius: 0;
+    color: var( --white );
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: $fs + 3px;
+    padding: 10px 40px;
+
+    &:focus{
+        box-shadow: 0 0 0 .25rem var( --HomeNavBG );
+    }
+
+}
+
+.btn-round-white{
+    background-color: var( --white );
+    border-radius: 30px;
+    color: var( --black );
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: $fs - 2px;
+    padding: 10px 50px;
+
+    &:focus{
+        box-shadow: 0 0 0 .25rem var( --HomeNavBG );
+    }
+
+    &:hover{
+        background-color: var( --heroAshBG );
+        color: var( --white );
+    }
 }

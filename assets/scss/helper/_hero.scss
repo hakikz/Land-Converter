@@ -1,7 +1,7 @@
 .hero{
+    position: relative;
     &.landing{
         background-color: var( --heroAshBG );
-        position: relative;
         top: 0;
         left: 0;
         width: 100%;
@@ -17,16 +17,56 @@
             }
 
         }
+    }
+
+    &.inner{
+        &.orange{
+            background-color: var( --orangeBG );
+
+            &.btn-yes{
+                p{
+                    padding-bottom: 10px;
+                }
+            }
+
+            .hero-wrap{
+                padding: 180px 0;
+            }
+
+        }
+
+        &.green{
+            background-color: var( --greenBG );
+
+            &.btn-yes{
+                p{
+                    padding-bottom: 10px;
+                }
+            }
+
+            .hero-wrap{
+                max-width: 850px;
+            }
+        }
+
+        &.image{
+            background-size: cover;
+            background-position: 100% 20%;
+        }
 
         .bottom-corner{
-            position: absolute;
             bottom: -1%;
-            left: 0;
+        }
+    }
 
-            img{
-                max-width: 400px;
-                width: 100%;
-            }
+    .bottom-corner{
+        position: absolute;
+        bottom: -1%;
+        left: 0;
+
+        img{
+            max-width: 400px;
+            width: 100%;
         }
     }
 

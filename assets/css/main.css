@@ -2,6 +2,8 @@
 :root {
   --HomeNavBG: rgba(89, 93, 98, 0.23);
   --white: #ffffff;
+  --black: #050505;
+  --black2: #42474D;
   --menuHover: #94979A;
   --NavBG: #595D62;
   --heroAshBG: #464B50;
@@ -9,20 +11,78 @@
   --greenBG: #80B35A;
   --orangeBG: #F27634;
   --buyPlotAsh: #eeeeee;
+  --red: red;
+  --cardAsh: #A3A3A2;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
+.btn-hero {
+  background-color: var(--heroAshBG);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+.btn-hero:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+
+.btn-orange {
+  background-color: var(--orangeBG);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+.btn-orange:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+
+.btn-green {
+  background-color: var(--greenBG);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+.btn-green:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+
+.btn-round-white {
+  background-color: var(--white);
+  border-radius: 30px;
+  color: var(--black);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 50px;
+}
+.btn-round-white:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+.btn-round-white:hover {
+  background-color: var(--heroAshBG);
+  color: var(--white);
+}
+
 .header {
   background-color: var(--NavBG);
   height: 90px;
 }
-.header.trasnparent {
+.header.transparent {
   background-color: var(--HomeNavBG);
 }
-.header.trasnparent.landing {
+.header.transparent.landing {
   position: absolute;
   width: 100%;
   top: 0;
@@ -56,10 +116,15 @@ body {
 .navbar .navbar-nav li a:hover {
   background-color: var(--menuHover);
 }
+.navbar .navbar-nav li.current-menu-item a {
+  background-color: var(--menuHover);
+}
 
 :root {
   --HomeNavBG: rgba(89, 93, 98, 0.23);
   --white: #ffffff;
+  --black: #050505;
+  --black2: #42474D;
   --menuHover: #94979A;
   --NavBG: #595D62;
   --heroAshBG: #464B50;
@@ -67,15 +132,75 @@ body {
   --greenBG: #80B35A;
   --orangeBG: #F27634;
   --buyPlotAsh: #eeeeee;
+  --red: red;
+  --cardAsh: #A3A3A2;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
+.btn-hero {
+  background-color: var(--heroAshBG);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+.btn-hero:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+
+.btn-orange {
+  background-color: var(--orangeBG);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+.btn-orange:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+
+.btn-green {
+  background-color: var(--greenBG);
+  border-radius: 0;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+.btn-green:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+
+.btn-round-white {
+  background-color: var(--white);
+  border-radius: 30px;
+  color: var(--black);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 50px;
+}
+.btn-round-white:focus {
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+.btn-round-white:hover {
+  background-color: var(--heroAshBG);
+  color: var(--white);
+}
+
+.hero {
+  position: relative;
+}
 .hero.landing {
   background-color: var(--heroAshBG);
-  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -89,12 +214,37 @@ body {
   max-width: 600px;
   width: 100%;
 }
-.hero.landing .bottom-corner {
+.hero.inner.orange {
+  background-color: var(--orangeBG);
+}
+.hero.inner.orange.btn-yes p {
+  padding-bottom: 10px;
+}
+.hero.inner.orange .hero-wrap {
+  padding: 180px 0;
+}
+.hero.inner.green {
+  background-color: var(--greenBG);
+}
+.hero.inner.green.btn-yes p {
+  padding-bottom: 10px;
+}
+.hero.inner.green .hero-wrap {
+  max-width: 850px;
+}
+.hero.inner.image {
+  background-size: cover;
+  background-position: 100% 20%;
+}
+.hero.inner .bottom-corner {
+  bottom: -1%;
+}
+.hero .bottom-corner {
   position: absolute;
   bottom: -1%;
   left: 0;
 }
-.hero.landing .bottom-corner img {
+.hero .bottom-corner img {
   max-width: 400px;
   width: 100%;
 }
@@ -168,6 +318,251 @@ body {
 }
 .enter .text-block.buy-plot h2, .enter .text-block.buy-plot p, .enter .text-block.buy-plot a {
   color: var(--herAshBG);
+}
+
+.why-sell {
+  padding: 120px 0;
+  background-color: var(--heroAshBG);
+}
+.why-sell.buy {
+  background-color: var(--buyPlotAsh);
+}
+.why-sell.buy .questions li {
+  color: var(--heroAshBG);
+}
+.why-sell.buy .work-flow p {
+  color: var(--heroAshBG);
+}
+.why-sell .questions {
+  padding: 0;
+  margin-bottom: 0;
+}
+.why-sell .questions li {
+  list-style: none;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.why-sell .work-flow {
+  margin-bottom: 50px;
+}
+.why-sell .work-flow p {
+  color: var(--white);
+  line-height: 1.5em;
+  padding-right: 100px;
+}
+.why-sell .work-flow p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.query-card {
+  padding: 50px 0 80px;
+  background-color: var(--heroAshBG);
+}
+.query-card .card {
+  background-color: var(--orangeBG);
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+  padding: 100px 0 80px;
+}
+.query-card .card.green {
+  background-color: var(--greenBG);
+}
+.query-card .card.ash {
+  background-color: var(--cardAsh);
+}
+.query-card .card img {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+.query-card .card img.cubehaus {
+  max-width: 200px;
+  padding-top: 16px;
+}
+.query-card .card .card-title {
+  font-weight: 300;
+  font-size: 30px;
+  color: var(--white);
+  padding-bottom: 40px;
+}
+.query-card .card .card-text {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--white);
+  padding: 0 40px 30px;
+  margin-bottom: 0;
+}
+
+.cta-part {
+  background-color: var(--greenBG);
+  color: var(--white);
+  text-align: center;
+  padding: 50px 0;
+}
+.cta-part h3 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.cta-part p {
+  font-size: 22px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.cta-part span {
+  padding: 50px 0;
+  display: block;
+  font-size: 22px;
+}
+.cta-part span a {
+  text-decoration: none;
+  color: var(--white);
+}
+.cta-part span a:hover {
+  text-decoration: underline;
+}
+.cta-part address {
+  line-height: 2em;
+}
+.cta-part address a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+}
+.cta-part address a:hover {
+  text-decoration: underline;
+}
+
+.valuation-details {
+  padding: 100px 0;
+}
+.valuation-details .valuation-text-wrap {
+  padding: 0 0 60px;
+}
+.valuation-details .valuation-text-wrap p {
+  font-size: 18px;
+  color: var(--black2);
+}
+.valuation-details .valuation-text-wrap p:not(:last-child) {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.valuation-details .valuation-text-wrap p a {
+  text-decoration: none;
+  color: var(--black2);
+}
+.valuation-details .valuation-text-wrap p a:hover {
+  text-decoration: underline;
+}
+.valuation-details .form-pre-wrap h3 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.valuation-details .form-pre-wrap p, .valuation-details .form-pre-wrap address {
+  font-size: 18px;
+  color: var(--black2);
+}
+.valuation-details .form-pre-wrap address {
+  padding: 20px 0 30px;
+  font-weight: 700;
+}
+.valuation-details .form-pre-wrap address a {
+  text-decoration: none;
+  color: var(--black2);
+}
+.valuation-details .form-pre-wrap address a:not(:last-child) {
+  color: var(--orangeBG);
+}
+.valuation-details .form-pre-wrap address a:hover {
+  text-decoration: underline;
+}
+.valuation-details .form-wrap h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.valuation-details .form-wrap label {
+  font-weight: 700;
+}
+.valuation-details .form-wrap label span {
+  color: var(--red);
+}
+.valuation-details .form-wrap input:focus, .valuation-details .form-wrap button:focus {
+  border-color: var(--HomeNavBG);
+  box-shadow: 0 0 0 0.25rem var(--HomeNavBG);
+}
+.valuation-details .form-wrap button {
+  border: 1px solid var(--black2);
+}
+
+.how-it-works {
+  background-color: var(--heroAshBG);
+  padding: 100px 0;
+}
+.how-it-works.buy {
+  background-color: var(--buyPlotAsh);
+}
+.how-it-works.buy .how-it-works-wrap article {
+  color: var(--heroAshBG);
+}
+.how-it-works .how-it-works-wrap article {
+  color: var(--white);
+  margin-bottom: 45px;
+}
+.how-it-works .how-it-works-wrap article h4 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+.how-it-works .how-it-works-wrap article p {
+  line-height: 1.8em;
+}
+.how-it-works .how-it-works-wrap article p a {
+  color: var(--orangeBG);
+  text-decoration: none;
+}
+.how-it-works .how-it-works-wrap article p a:hover {
+  text-decoration: underline;
+}
+
+.faq {
+  background-color: var(--heroAshBG);
+  padding: 100px 0;
+}
+.faq.buy {
+  background-color: var(--buyPlotAsh);
+}
+.faq.buy .faq-wrap article {
+  color: var(--heroAshBG);
+}
+.faq .faq-wrap article {
+  color: var(--white);
+  margin-bottom: 45px;
+}
+.faq .faq-wrap article h6 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+.faq .faq-wrap article p {
+  line-height: 1.8em;
+}
+.faq .faq-wrap article p a {
+  color: var(--orangeBG);
+  text-decoration: none;
+}
+.faq .faq-wrap article p a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -266,6 +661,89 @@ body {
 }
 .footer .privacy-part .copyright {
   color: var(--menuHover);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: auto;
+    padding: 20px 0;
+  }
+  .header.transparent {
+    background-color: var(--heroAshBG);
+  }
+
+  .navbar .navbar-brand img {
+    max-width: 230px;
+  }
+  .navbar .navbar-nav {
+    margin-top: 20px;
+  }
+  .navbar .navbar-nav li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--white);
+    padding: 18px 15px;
+  }
+
+  .enter .text-block.sell-land {
+    margin-bottom: 30px;
+  }
+
+  .footer .contact-part {
+    text-align: center;
+  }
+  .footer .contact-part .contact-menu {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .query-card .row .col-lg-4:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    height: auto;
+    padding: 20px 0;
+  }
+  .header.transparent {
+    background-color: var(--heroAshBG);
+  }
+
+  .hero.landing .top-corner {
+    top: -20%;
+  }
+
+  .navbar .navbar-brand img {
+    max-width: 230px;
+  }
+  .navbar .navbar-nav {
+    margin-top: 20px;
+  }
+  .navbar .navbar-nav li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--white);
+    padding: 18px 15px;
+  }
+
+  .enter .text-block.sell-land {
+    margin-bottom: 30px;
+  }
+
+  .footer .contact-part {
+    text-align: center;
+  }
+  .footer .contact-part .contact-menu {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .query-card .row .col-lg-4:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+.why-sell{
+    padding: 120px 0;
+    background-color: var( --heroAshBG );
+
+    &.buy{
+        background-color: var( --buyPlotAsh );
+
+        .questions{
+    
+            li{
+                color: var( --heroAshBG );
+            }
+    
+        }
+
+        .work-flow{
+            p{
+                color: var( --heroAshBG );
+            }
+        }
+    }
+
+    .questions{
+        padding: 0;
+        margin-bottom: 0;
+
+        li{
+            list-style: none;
+            display: block;
+            font-weight: $bold;
+            font-size: $fs + 5px;
+            color: var( --white );
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .work-flow{
+        margin-bottom: 50px;
+        p{
+            color: var( --white );
+            line-height: 1.5em;
+            padding-right: 100px;
+
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+
+        }
+    }
+}
